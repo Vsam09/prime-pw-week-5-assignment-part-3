@@ -27,3 +27,10 @@ function showCollection( array ){
   }
 }
   showCollection (collection);
+
+function findByArtist( artist ) {
+  const find = [];
+  for (let i=0; i<artist.length; i++)
+  console.log(artist[i])
+
+}
