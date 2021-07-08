@@ -5,10 +5,10 @@ function addToCollection (title, artist, yearPublished) {
   album.title = title;
   album.artist = artist;
   album.yearPublished = yearPublished;
-  //Add the new object to the end of the `collection` array
+//Add the new object to the end of the `collection` array
   collection.push(album);
-  //Return the newly created object
-  return album;
+//Return the newly created object
+    return album;
 }
 //Console.log each album as added using the returned value
 console.log(' Added Album01', collection.album01 = addToCollection('Fire on fire', 'Sam Smith', 2018) );
@@ -29,8 +29,12 @@ function showCollection( array ){
   showCollection (collection);
 
 function findByArtist( artist ) {
-  const find = [];
-  for (let i=0; i<artist.length; i++)
-  console.log(artist[i])
-
+  let findArtist = [];
+  for (let item of collection)
+    if (item.artist === artist ){
+      findArtist.push(artist);
+    return findArtist;
+  }
+    return false;
 }
+console.log('Find artist', findByArtist('Sam Smith') );
